@@ -1,5 +1,4 @@
-import rmgTranslate from '../src';
-import { LanguageCode, Translation } from '../src/util/types';
+import rmgTranslate, { LanguageCode, Translation } from '../src';
 
 const $ = document.querySelector.bind(document);
 

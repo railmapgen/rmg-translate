@@ -25,8 +25,4 @@ export enum LanguageCode {
     Turkish = 'tr',
 }
 
-export interface Resource {
-    translations: Record<string, string>;
-}
-
 export type Translation = Partial<Record<LanguageCode, string>>;
