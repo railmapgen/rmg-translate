@@ -1,24 +1,24 @@
 import rmgTranslate from '../src';
+import { LanguageCode, Translation } from '../src/util/types';
 
 const $ = document.querySelector.bind(document);
 
-const allResources: Record<string, Record<string, string>> = {};
+const allTranslations: Record<string, Translation> = {};
 
-Object.entries(rmgTranslate.scripts).forEach(([lang, scripts]) => {
-    Object.entries(scripts).forEach(([key, value]) => {
-        if (key in allResources) {
-            allResources[key][lang] = value;
-        } else {
-            allResources[key] = { [lang]: value };
-        }
+Object.entries(rmgTranslate.resources).forEach(([lang, resource]) => {
+    Object.entries(resource.translations).forEach(([key, value]) => {
+        allTranslations[key] = {
+            ...allTranslations[key],
+            [lang as LanguageCode]: value,
+        };
     });
 });
 
-const HEADERS = ['zh-Hans', 'zh-Hant'];
+const HEADERS: LanguageCode[] = [LanguageCode.ChineseSimp, LanguageCode.ChineseTrad];
 
 const table = document.createElement('table');
 const tbody = document.createElement('tbody');
-Object.entries(allResources).forEach(([origin, translations]) => {
+Object.entries(allTranslations).forEach(([origin, translations]) => {
     const tr = document.createElement('tr');
     const colName = document.createElement('td');
     colName.textContent = origin;
@@ -26,11 +26,11 @@ Object.entries(allResources).forEach(([origin, translations]) => {
 
     HEADERS.forEach(lang => {
         const td = document.createElement('td');
-        td.textContent = translations[lang];
+        td.textContent = translations[lang] ?? '';
         tr.append(td);
     });
     tbody.append(tr);
 });
 table.append(tbody);
 
-$('#root').append(table);
+$('#root')?.append(table);
