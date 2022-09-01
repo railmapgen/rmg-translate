@@ -1,10 +1,10 @@
-import zhHansTranslations from './translations/zh-Hans.json';
-import zhHantTranslations from './translations/zh-Hant.json';
+import zhHansTranslation from './translations/zh-Hans.json';
+import zhHantTranslation from './translations/zh-Hant.json';
 import { Resource } from 'i18next';
 
 const resources: Resource = {
-    'zh-Hans': { translations: zhHansTranslations },
-    'zh-Hant': { translations: zhHantTranslations },
+    'zh-Hans': { translation: zhHansTranslation },
+    'zh-Hant': { translation: zhHantTranslation },
 };
 
 const rmgTranslate = { resources };
