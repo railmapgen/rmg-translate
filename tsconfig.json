@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "target": "es5",
     "lib": [
       "dom",
@@ -15,13 +16,12 @@
     "downlevelIteration": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "declaration": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
+    "src/**/*"
   ]
 }
