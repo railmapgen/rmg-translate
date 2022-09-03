@@ -5,7 +5,7 @@ const $ = document.querySelector.bind(document);
 const allTranslations: Record<string, Translation> = {};
 
 Object.entries(rmgTranslate.resources).forEach(([lang, resource]) => {
-    Object.entries(resource.translations).forEach(([key, value]) => {
+    Object.entries(resource.translation).forEach(([key, value]) => {
         allTranslations[key] = {
             ...allTranslations[key],
             [lang as LanguageCode]: value,
