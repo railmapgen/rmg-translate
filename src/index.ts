@@ -2,23 +2,34 @@ import zhHansTranslation from './translations/zh-Hans.json';
 import zhHantTranslation from './translations/zh-Hant.json';
 import { Resource } from 'i18next';
 
-const resources: Resource = {
-    'zh-Hans': { translation: zhHansTranslation },
-    'zh-Hant': { translation: zhHantTranslation },
-};
+class Builder {
+    private readonly _resources: Resource;
 
-const enrichResources = (resources: Resource, lang: string, additionalResource: { [key: string]: any }) => {
-    if (lang in resources) {
-        resources[lang].translation = {
-            ...(resources[lang].translation as { [key: string]: any }),
-            ...additionalResource,
+    constructor() {
+        this._resources = {
+            'zh-Hans': { translation: zhHansTranslation },
+            'zh-Hant': { translation: zhHantTranslation },
         };
-    } else {
-        resources[lang].translation = { ...additionalResource };
     }
-};
 
-const rmgTranslate = { resources, enrichResources };
+    withResource(lang: string, additionalResource: { [key: string]: any }) {
+        if (lang in this._resources) {
+            this._resources[lang].translation = {
+                ...(this._resources[lang].translation as { [key: string]: any }),
+                ...additionalResource,
+            };
+        } else {
+            this._resources[lang] = { translation: additionalResource };
+        }
 
+        return this;
+    }
+
+    build() {
+        return this._resources;
+    }
+}
+
+const RmgTranslate = { Builder };
 export * from './util/types';
-export default rmgTranslate;
+export default RmgTranslate;

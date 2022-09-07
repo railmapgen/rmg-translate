@@ -1,11 +1,10 @@
-import rmgTranslate, { LanguageCode, Translation } from '../src';
+import RmgTranslate, { LanguageCode, Translation } from '../src';
 
 const $ = document.querySelector.bind(document);
 
 const allTranslations: Record<string, Translation> = {};
 
-const resources = rmgTranslate.resources;
-rmgTranslate.enrichResources(resources, 'zh-Hant', { 'test item': '測試項目' });
+const resources = new RmgTranslate.Builder().withResource('zh-Hant', { 'test item': '測試項目' }).build();
 
 Object.entries(resources).forEach(([lang, resource]) => {
     Object.entries(resource.translation).forEach(([key, value]) => {
