@@ -7,7 +7,18 @@ const resources: Resource = {
     'zh-Hant': { translation: zhHantTranslation },
 };
 
-const rmgTranslate = { resources };
+const enrichResources = (resources: Resource, lang: string, additionalResource: { [key: string]: any }) => {
+    if (lang in resources) {
+        resources[lang].translation = {
+            ...(resources[lang].translation as { [key: string]: any }),
+            ...additionalResource,
+        };
+    } else {
+        resources[lang].translation = { ...additionalResource };
+    }
+};
+
+const rmgTranslate = { resources, enrichResources };
 
 export * from './util/types';
 export default rmgTranslate;

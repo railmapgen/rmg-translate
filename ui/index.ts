@@ -4,7 +4,10 @@ const $ = document.querySelector.bind(document);
 
 const allTranslations: Record<string, Translation> = {};
 
-Object.entries(rmgTranslate.resources).forEach(([lang, resource]) => {
+const resources = rmgTranslate.resources;
+rmgTranslate.enrichResources(resources, 'zh-Hant', { 'test item': '測試項目' });
+
+Object.entries(resources).forEach(([lang, resource]) => {
     Object.entries(resource.translation).forEach(([key, value]) => {
         allTranslations[key] = {
             ...allTranslations[key],
