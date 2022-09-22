@@ -1,9 +1,17 @@
 {
+    "Apps": "应用程序",
+    "Cancel": "取消",
     "Components": "组件",
+    "Confirm": "确定",
+    "Language": "语言",
     "Palette": "调色板",
     "Rail Map Generator": "铁路线路图生成器",
+    "Rail Map Painter": "地铁线路图绘制器",
+    "Reset": "重置",
     "RMG Home": "RMG 主页",
     "Seed Project": "种子项目",
+    "Settings": "设置",
+    "Submit": "提交",
     "Templates": "模板",
     "Translate": "翻译"
 }
