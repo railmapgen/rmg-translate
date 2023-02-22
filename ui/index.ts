@@ -27,6 +27,7 @@ Object.entries(allTranslations).forEach(([origin, translations]) => {
 
     HEADERS.forEach(lang => {
         const td = document.createElement('td');
+        td.lang = lang;
         td.textContent = translations[lang] ?? '';
         tr.append(td);
     });
