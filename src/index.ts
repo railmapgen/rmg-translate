@@ -1,15 +1,38 @@
 import zhHansTranslation from './translations/zh-Hans.json';
 import zhHantTranslation from './translations/zh-Hant.json';
-import { Resource } from 'i18next';
+import koTranslation from './translations/ko.json';
+import i18n, { Module, Resource } from 'i18next';
 
 class Builder {
+    private _appName = 'RMG';
+    private _lng: string | undefined = undefined;
     private readonly _resources: Resource;
 
     constructor() {
         this._resources = {
             'zh-Hans': { translation: zhHansTranslation },
             'zh-Hant': { translation: zhHantTranslation },
+            ko: { translation: koTranslation },
         };
+    }
+
+    use(module: Module) {
+        i18n.use(module);
+        return this;
+    }
+
+    withAppName(appName: string) {
+        this._appName = appName;
+        return this;
+    }
+
+    withLng(lng: string) {
+        this._lng = lng;
+        return this;
+    }
+
+    getResource() {
+        return this._resources;
     }
 
     withResource(lang: string, additionalResource: { [key: string]: any }) {
@@ -26,7 +49,26 @@ class Builder {
     }
 
     build() {
-        return this._resources;
+        i18n.init({
+            lng: this._lng,
+            fallbackLng: {
+                'zh-CN': ['zh-Hans', 'en'],
+                'zh-HK': ['zh-Hant', 'en'],
+                'zh-TW': ['zh-Hant', 'en'],
+                'zh-Hant': ['zh-HK', 'zh-TW', 'en'],
+                default: ['en'],
+            },
+            resources: this._resources,
+        })
+            .then(t => {
+                document.title = t(this._appName);
+                document.documentElement.lang = i18n.language;
+            })
+            .catch(err => {
+                console.error('[rmg-translate] unexpected error occurs while initialising i18n', err);
+            });
+
+        return i18n;
     }
 }
 
