@@ -15,7 +15,7 @@ Object.entries(i18nBuilder.getResource()).forEach(([lang, resource]) => {
     });
 });
 
-const HEADERS: LanguageCode[] = [LanguageCode.ChineseSimp, LanguageCode.ChineseTrad];
+const HEADERS: LanguageCode[] = ['zh-Hans', 'zh-Hant', 'ko'];
 
 const table = document.createElement('table');
 const tbody = document.createElement('tbody');

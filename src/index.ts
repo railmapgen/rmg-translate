@@ -1,7 +1,8 @@
+import i18n, { Module, Resource } from 'i18next';
+import { LanguageCode } from './util/types';
 import zhHansTranslation from './translations/zh-Hans.json';
 import zhHantTranslation from './translations/zh-Hant.json';
 import koTranslation from './translations/ko.json';
-import i18n, { Module, Resource } from 'i18next';
 
 class Builder {
     private _appName = 'RMG';
@@ -35,10 +36,10 @@ class Builder {
         return this._resources;
     }
 
-    withResource(lang: string, additionalResource: { [key: string]: any }) {
+    withResource(lang: LanguageCode, additionalResource: Record<string, any>) {
         if (lang in this._resources) {
             this._resources[lang].translation = {
-                ...(this._resources[lang].translation as { [key: string]: any }),
+                ...(this._resources[lang].translation as Record<string, any>),
                 ...additionalResource,
             };
         } else {
@@ -68,10 +69,15 @@ class Builder {
                 console.error('[rmg-translate] unexpected error occurs while initialising i18n', err);
             });
 
+        i18n.on('languageChanged', lng => {
+            document.title = i18n.t(this._appName);
+            document.documentElement.lang = lng;
+        });
+
         return i18n;
     }
 }
 
-const RmgTranslate = { Builder };
+const rmgTranslate = { Builder };
 export * from './util/types';
-export default RmgTranslate;
+export default rmgTranslate;
