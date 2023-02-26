@@ -1,4 +1,4 @@
-import rmgTranslate, { LanguageCode, SUPPORTED_LANGUAGE, Translation } from '../src';
+import rmgTranslate, { LanguageCode, SUPPORTED_LANGUAGES, Translation } from '../src';
 
 const $ = document.querySelector.bind(document);
 
@@ -23,7 +23,7 @@ Object.entries(allTranslations).forEach(([origin, translations]) => {
     colName.textContent = origin;
     tr.append(colName);
 
-    SUPPORTED_LANGUAGE.forEach(lang => {
+    SUPPORTED_LANGUAGES.forEach(lang => {
         if (lang === 'en') return;
         const td = document.createElement('td');
         td.lang = lang;
