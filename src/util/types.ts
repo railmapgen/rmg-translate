@@ -1,5 +1,5 @@
-export const SUPPORTED_LANGUAGE = ['en', 'ko', 'zh-Hans', 'zh-Hant'] as const;
-export type SupportedLanguageCode = (typeof SUPPORTED_LANGUAGE)[number];
+export const SUPPORTED_LANGUAGES = ['en', 'ko', 'zh-Hans', 'zh-Hant'] as const;
+export type SupportedLanguageCode = (typeof SUPPORTED_LANGUAGES)[number];
 export type LanguageCode =
     | SupportedLanguageCode
     | 'ar' // Arabic
