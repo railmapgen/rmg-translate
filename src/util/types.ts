@@ -5,7 +5,9 @@ export type LanguageCode =
     | 'ar' // Arabic
     | 'az' // Azerbaijani
     | 'ca' // Catalan
+    | 'da' // Danish
     | 'de' // German
+    | 'el' // Greek
     | 'en' // English
     | 'es' // Spanish
     | 'fa' // Persian
@@ -13,14 +15,23 @@ export type LanguageCode =
     | 'ga' // Irish
     | 'gd' // Scottish Gaelic
     | 'hi' // Hindi
+    | 'hu' // Hungarian
+    | 'id' // Indonesian
+    | 'it' // Italian
     | 'ja' // Japanese
     | 'ko' // Korean
     | 'ms' // Malay
     | 'no' // Norwegian
+    | 'pl' // Polish
     | 'pt' // Portuguese
+    | 'ro' // Romanian
     | 'ru' // Russian
     | 'sv' // Swedish
+    | 'th' // Thai
     | 'tr' // Turkish
+    | 'ur' // Urdu
+    | 'uz' // Uzbek
+    | 'vi' // Vietnamese
     | 'zh' // Chinese
     | 'zh-CN' // ChineseCN
     | 'zh-Hans' // ChineseSimp
@@ -55,12 +66,26 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         'zh-Hans': '加泰罗尼亚文',
         'zh-Hant': '加泰隆尼亞文',
     },
+    da: {
+        da: 'Dansk',
+        en: 'Danish',
+        ko: '덴마크어',
+        'zh-Hans': '丹麦文',
+        'zh-Hant': '丹麥文',
+    },
     de: {
         de: 'Deutsch',
         en: 'German',
         ko: '독일어',
         'zh-Hans': '德文',
         'zh-Hant': '德文',
+    },
+    el: {
+        el: 'Ελληνικά',
+        en: 'Greek',
+        ko: '그리스어',
+        'zh-Hans': '希腊文',
+        'zh-Hant': '希臘文',
     },
     en: {
         en: 'English',
@@ -110,6 +135,27 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         'zh-Hans': '印地文',
         'zh-Hant': '印地文',
     },
+    hu: {
+        en: 'Hungarian',
+        hu: 'Magyar',
+        ko: '헝가리어',
+        'zh-Hans': '匈牙利文',
+        'zh-Hant': '匈牙利文',
+    },
+    id: {
+        en: 'Indoesian',
+        id: 'Bahasa Indonesia',
+        ko: '인도네시아어',
+        'zh-Hans': '印尼文',
+        'zh-Hant': '印尼文',
+    },
+    it: {
+        en: 'Italian',
+        it: 'Italiano',
+        ko: '이탈리아어',
+        'zh-Hans': '意大利文',
+        'zh-Hant': '意大利文',
+    },
     ja: {
         en: 'Japanese',
         ja: '日本語',
@@ -137,12 +183,26 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         'zh-Hans': '挪威文',
         'zh-Hant': '挪威文',
     },
+    pl: {
+        en: 'Polish',
+        ko: '폴란드어',
+        pl: 'Polski',
+        'zh-Hans': '波兰文',
+        'zh-Hant': '波蘭文',
+    },
     pt: {
         en: 'Portuguese',
         ko: '포르투갈어',
         pt: 'Português',
         'zh-Hans': '葡萄牙文',
         'zh-Hant': '葡萄牙文',
+    },
+    ro: {
+        en: 'Romanian',
+        ko: '루마니아어',
+        ro: 'Română',
+        'zh-Hans': '罗马尼亚文',
+        'zh-Hant': '羅馬尼亞文',
     },
     ru: {
         en: 'Russian',
@@ -158,12 +218,40 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         'zh-Hans': '瑞典文',
         'zh-Hant': '瑞典文',
     },
+    th: {
+        en: 'Thai',
+        ko: '태국어',
+        th: 'ภาษาไทย',
+        'zh-Hans': '泰文',
+        'zh-Hant': '泰文',
+    },
     tr: {
         en: 'Turkish',
         ko: '튀르키예어',
         tr: 'Türkçe',
         'zh-Hans': '土耳其文',
         'zh-Hant': '土耳其文',
+    },
+    ur: {
+        en: 'Urdo',
+        ko: '우르두어',
+        ur: 'اردو',
+        'zh-Hans': '乌尔都文',
+        'zh-Hant': '烏爾都文',
+    },
+    uz: {
+        en: 'Uzbek',
+        ko: '우즈베크어',
+        uz: 'Oʻzbekcha',
+        'zh-Hans': '乌兹别克文',
+        'zh-Hant': '烏茲別克文',
+    },
+    vi: {
+        en: 'Vietnamese',
+        ko: '베트남어',
+        vi: 'Tiếng Việt',
+        'zh-Hans': '越南文',
+        'zh-Hant': '越南文',
     },
     zh: {
         en: 'Chinese',
