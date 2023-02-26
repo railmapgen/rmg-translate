@@ -1,4 +1,4 @@
-import rmgTranslate, { LanguageCode, Translation } from '../src';
+import rmgTranslate, { LanguageCode, SUPPORTED_LANGUAGE, Translation } from '../src';
 
 const $ = document.querySelector.bind(document);
 
@@ -15,8 +15,6 @@ Object.entries(i18nBuilder.getResource()).forEach(([lang, resource]) => {
     });
 });
 
-const HEADERS: LanguageCode[] = ['zh-Hans', 'zh-Hant', 'ko'];
-
 const table = document.createElement('table');
 const tbody = document.createElement('tbody');
 Object.entries(allTranslations).forEach(([origin, translations]) => {
@@ -25,7 +23,8 @@ Object.entries(allTranslations).forEach(([origin, translations]) => {
     colName.textContent = origin;
     tr.append(colName);
 
-    HEADERS.forEach(lang => {
+    SUPPORTED_LANGUAGE.forEach(lang => {
+        if (lang === 'en') return;
         const td = document.createElement('td');
         td.lang = lang;
         td.textContent = translations[lang] ?? '';
