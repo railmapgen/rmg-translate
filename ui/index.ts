@@ -1,13 +1,11 @@
-import rmgTranslate, { LanguageCode, SUPPORTED_LANGUAGES, Translation } from '../src';
+import { defaultTranslation, LanguageCode, SUPPORTED_LANGUAGES, Translation } from '../src';
 
 const $ = document.querySelector.bind(document);
 
 const allTranslations: Record<string, Translation> = {};
 
-const i18nBuilder = new rmgTranslate.Builder().withLng('en').withResource('zh-Hant', { 'test item': '測試項目' });
-
-Object.entries(i18nBuilder.getResource()).forEach(([lang, resource]) => {
-    Object.entries(resource.translation).forEach(([key, value]) => {
+Object.entries(defaultTranslation).forEach(([lang, resource]) => {
+    Object.entries(resource).forEach(([key, value]) => {
         allTranslations[key] = {
             ...allTranslations[key],
             [lang as LanguageCode]: value,
@@ -35,4 +33,3 @@ Object.entries(allTranslations).forEach(([origin, translations]) => {
 table.append(tbody);
 
 $('#root')?.append(table);
-(window as any).i18n = i18nBuilder.build();
