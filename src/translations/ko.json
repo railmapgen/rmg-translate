@@ -1,5 +1,6 @@
 {
     "Apps": "앱",
+    "Back to list": "다시 목록으로",
     "Cancel": "취소",
     "Components": "요소",
     "Configuration file": "환경 설정 파일",
@@ -21,5 +22,6 @@
     "Seed Project": "종자 프로젝트",
     "Settings": "설치",
     "Submit": "제출",
-    "Translate": "번역"
+    "Translate": "번역",
+    "Upload": "업로드"
 }

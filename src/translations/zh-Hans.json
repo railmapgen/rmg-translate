@@ -1,5 +1,6 @@
 {
     "Apps": "应用程序",
+    "Back to list": "返回列表",
     "Cancel": "取消",
     "Components": "组件",
     "Configuration file": "配置文件",
@@ -21,5 +22,6 @@
     "Seed Project": "种子项目",
     "Settings": "设置",
     "Submit": "提交",
-    "Translate": "翻译"
+    "Translate": "翻译",
+    "Upload": "上传"
 }
