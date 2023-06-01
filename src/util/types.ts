@@ -34,12 +34,8 @@ export type LanguageCode =
     | 'ur' // Urdu
     | 'uz' // Uzbek
     | 'vi' // Vietnamese
-    | 'zh' // Chinese
-    | 'zh-CN' // ChineseCN
     | 'zh-Hans' // ChineseSimp
-    | 'zh-Hant' // ChineseTrad
-    | 'zh-HK' // ChineseHK
-    | 'zh-TW'; // ChineseTW
+    | 'zh-Hant'; // ChineseTrad
 
 export type Translation = Partial<Record<LanguageCode, string>>;
 
@@ -257,20 +253,6 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         'zh-Hans': '越南文',
         'zh-Hant': '越南文',
     },
-    zh: {
-        en: 'Chinese',
-        ko: '중국어',
-        zh: '中文',
-        'zh-Hans': '中文',
-        'zh-Hant': '中文',
-    },
-    'zh-CN': {
-        en: 'Simplified Chinese (China)',
-        ko: '중국어 간체자(중국)',
-        'zh-CN': '简体中文',
-        'zh-Hans': '简体中文（中国）',
-        'zh-Hant': '簡體中文（中國）',
-    },
     'zh-Hans': {
         en: 'Simplified Chinese',
         ko: '중국어 간체자',
@@ -282,19 +264,5 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         ko: '중국어 정체자',
         'zh-Hans': '繁体中文',
         'zh-Hant': '繁體中文',
-    },
-    'zh-HK': {
-        en: 'Traditional Chinese (Hong Kong)',
-        ko: '중국어 정체자(홍콩)',
-        'zh-Hans': '繁体中文（香港）',
-        'zh-Hant': '繁體中文（香港）',
-        'zh-HK': '繁體中文',
-    },
-    'zh-TW': {
-        en: 'Traditional Chinese (Taiwan)',
-        ko: '중국어 정체자(대만)',
-        'zh-Hans': '繁体中文（台湾）',
-        'zh-Hant': '繁體中文（台灣）',
-        'zh-TW': '正體中文',
     },
 };
