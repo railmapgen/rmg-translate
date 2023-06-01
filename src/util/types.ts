@@ -1,5 +1,7 @@
-export const SUPPORTED_LANGUAGES = ['en', 'ko', 'zh-Hans', 'zh-Hant'] as const;
+export const SUPPORTED_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant'] as const;
+export const OPTIONAL_LANGUAGES = ['ko'] as const;
 export type SupportedLanguageCode = (typeof SUPPORTED_LANGUAGES)[number];
+export type OptionalLanguageCode = (typeof OPTIONAL_LANGUAGES)[number];
 export type LanguageCode =
     | SupportedLanguageCode
     | 'ar' // Arabic
@@ -41,7 +43,9 @@ export type LanguageCode =
 
 export type Translation = Partial<Record<LanguageCode, string>>;
 
-type LanguageName<L extends LanguageCode> = Record<L, string> & Record<SupportedLanguageCode, string> & Translation;
+type LanguageName<L extends LanguageCode> = Record<L, string> &
+    Record<SupportedLanguageCode & OptionalLanguageCode, string> &
+    Translation;
 type LanguageNameMap<T extends LanguageCode> = { [K in T]: LanguageName<K> };
 
 export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {

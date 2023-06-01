@@ -1,4 +1,4 @@
-import { defaultTranslation, LanguageCode, SUPPORTED_LANGUAGES, Translation } from '../src';
+import { defaultTranslation, LanguageCode, OPTIONAL_LANGUAGES, SUPPORTED_LANGUAGES, Translation } from '../src';
 
 const $ = document.querySelector.bind(document);
 
@@ -21,7 +21,7 @@ Object.entries(allTranslations).forEach(([origin, translations]) => {
     colName.textContent = origin;
     tr.append(colName);
 
-    SUPPORTED_LANGUAGES.forEach(lang => {
+    [...SUPPORTED_LANGUAGES, ...OPTIONAL_LANGUAGES].forEach(lang => {
         if (lang === 'en') return;
         const td = document.createElement('td');
         td.lang = lang;
