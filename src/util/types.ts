@@ -21,6 +21,7 @@ export type LanguageCode =
     | 'id' // Indonesian
     | 'it' // Italian
     | 'ja' // Japanese
+    | 'kk' // Kazakh
     | 'ko' // Korean
     | 'ms' // Malay
     | 'no' // Norwegian
@@ -31,6 +32,7 @@ export type LanguageCode =
     | 'sv' // Swedish
     | 'th' // Thai
     | 'tr' // Turkish
+    | 'uk' // Ukrainian
     | 'ur' // Urdu
     | 'uz' // Uzbek
     | 'vi' // Vietnamese
@@ -163,6 +165,13 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         'zh-Hans': '日文',
         'zh-Hant': '日文',
     },
+    kk: {
+        en: 'Kazakh',
+        kk: 'Қазақша',
+        ko: '카자흐어',
+        'zh-Hans': '哈萨克文',
+        'zh-Hant': '哈薩克文',
+    },
     ko: {
         en: 'Korean',
         ko: '한국어',
@@ -231,6 +240,13 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         tr: 'Türkçe',
         'zh-Hans': '土耳其文',
         'zh-Hant': '土耳其文',
+    },
+    uk: {
+        en: 'Ukrainian',
+        ko: '우크라이나어',
+        uk: 'Українська',
+        'zh-Hans': '乌克兰文',
+        'zh-Hant': '烏克蘭文',
     },
     ur: {
         en: 'Urdo',
