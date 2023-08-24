@@ -1,5 +1,5 @@
 export const SUPPORTED_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant'] as const;
-export const OPTIONAL_LANGUAGES = ['ko'] as const;
+export const OPTIONAL_LANGUAGES = ['ja', 'ko'] as const;
 export type SupportedLanguageCode = (typeof SUPPORTED_LANGUAGES)[number];
 export type OptionalLanguageCode = (typeof OPTIONAL_LANGUAGES)[number];
 export type LanguageCode =
@@ -42,7 +42,8 @@ export type LanguageCode =
 export type Translation = Partial<Record<LanguageCode, string>>;
 
 type LanguageName<L extends LanguageCode> = Record<L, string> &
-    Record<SupportedLanguageCode & OptionalLanguageCode, string> &
+    Record<SupportedLanguageCode, string> &
+    // Record<OptionalLanguageCode, string> &
     Translation;
 type LanguageNameMap<T extends LanguageCode> = { [K in T]: LanguageName<K> };
 
@@ -91,6 +92,7 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
     },
     en: {
         en: 'English',
+        ja: '英語',
         ko: '영어',
         'zh-Hans': '英文',
         'zh-Hant': '英文',
@@ -174,6 +176,7 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
     },
     ko: {
         en: 'Korean',
+        ja: '韓国語',
         ko: '한국어',
         'zh-Hans': '韩文',
         'zh-Hant': '韓文',
@@ -271,12 +274,14 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
     },
     'zh-Hans': {
         en: 'Simplified Chinese',
+        ja: '中国語（簡体字）',
         ko: '중국어 간체자',
         'zh-Hans': '简体中文',
         'zh-Hant': '簡體中文',
     },
     'zh-Hant': {
         en: 'Traditional Chinese',
+        ja: '中国語（繁体字）',
         ko: '중국어 정체자',
         'zh-Hans': '繁体中文',
         'zh-Hant': '繁體中文',
