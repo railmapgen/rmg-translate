@@ -1,8 +1,10 @@
 {
     "Language": "言語/Language",
-    "Palette": "パレット",
+    "Palette": "調色板",
     "Rail Map Generator": "鉄道路線図ジェネレータ",
     "Rail Map Toolkit": "路線図ツールキット",
     "Remove": "削除",
-    "RMG Templates": "RMG テンプレート"
+    "RMG Templates": "RMG テンプレート",
+    "RMP Gallery": "RMP 画家",
+    "RMP Designer": "RMP 図案家"
 }
