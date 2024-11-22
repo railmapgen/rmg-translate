@@ -36,6 +36,7 @@ export type LanguageCode =
     | 'ur' // Urdu
     | 'uz' // Uzbek
     | 'vi' // Vietnamese
+    | 'zh' // Chinese
     | 'zh-Hans' // ChineseSimp
     | 'zh-Hant'; // ChineseTrad
 
@@ -271,6 +272,14 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         vi: 'Tiếng Việt',
         'zh-Hans': '越南文',
         'zh-Hant': '越南文',
+    },
+    zh: {
+        en: 'Chinese',
+        ja: '中国語',
+        ko: '중국어',
+        zh: '中文',
+        'zh-Hans': '中文',
+        'zh-Hant': '中文',
     },
     'zh-Hans': {
         en: 'Simplified Chinese',
