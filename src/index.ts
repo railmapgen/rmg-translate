@@ -4,14 +4,14 @@ import jaTranslation from './translations/ja.json';
 import koTranslation from './translations/ko.json';
 import { OptionalLanguageCode, SupportedLanguageCode } from './util/types';
 
-export const defaultTranslation: Record<SupportedLanguageCode, Record<string, unknown>> & {
-    [l in OptionalLanguageCode]?: Record<string, unknown>;
+export const defaultTranslation: Record<SupportedLanguageCode, Record<string, never>> & {
+    [l in OptionalLanguageCode]?: Record<string, never>;
 } = {
     en: {},
-    'zh-Hans': zhHansTranslation,
-    'zh-Hant': zhHantTranslation,
-    ja: jaTranslation,
-    ko: koTranslation,
+    'zh-Hans': zhHansTranslation as never,
+    'zh-Hant': zhHantTranslation as never,
+    ja: jaTranslation as never,
+    ko: koTranslation as never,
 };
 
 export * from './util/types';
