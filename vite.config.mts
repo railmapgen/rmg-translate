@@ -1,9 +1,9 @@
-import { defineConfig, splitVendorChunkPlugin } from 'vite';
+import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config
 export default defineConfig({
     base: '/rmg-translate/',
-    plugins: [splitVendorChunkPlugin()],
+    plugins: [],
     build: {
         outDir: 'build',
     },

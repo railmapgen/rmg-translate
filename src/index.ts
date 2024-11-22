@@ -4,8 +4,8 @@ import jaTranslation from './translations/ja.json';
 import koTranslation from './translations/ko.json';
 import { OptionalLanguageCode, SupportedLanguageCode } from './util/types';
 
-export const defaultTranslation: Record<SupportedLanguageCode, Record<string, any>> & {
-    [l in OptionalLanguageCode]?: Record<string, any>;
+export const defaultTranslation: Record<SupportedLanguageCode, Record<string, unknown>> & {
+    [l in OptionalLanguageCode]?: Record<string, unknown>;
 } = {
     en: {},
     'zh-Hans': zhHansTranslation,
