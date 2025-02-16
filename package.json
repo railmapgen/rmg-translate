@@ -13,21 +13,26 @@
         "prettier": "^3.5.1",
         "typescript": "^5.7.3",
         "typescript-eslint": "^8.24.0",
+        "unbuild": "^3.3.1",
         "vite": "^6.1.0"
     },
     "scripts": {
         "dev": "vite --host",
-        "build": "tsc && vite build",
+        "build": "npm run build:package && npm run build:ui",
+        "build:ui": "tsc && vite build",
+        "build:package": "unbuild",
         "test": "echo \"No tests found\"",
         "lint": "eslint ./src ./ui",
         "lint:fix": "eslint ./src ./ui --fix",
         "preview": "vite preview"
     },
     "version": "3.2.3",
-    "main": "./dist/index.js",
+    "main": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
     "exports": {
-        ".": "./dist/index.js",
-        "./**/*": "./dist/**/*"
+        ".": {
+            "import": "./dist/index.mjs"
+        }
     },
     "files": [
         "dist"
