@@ -26,6 +26,7 @@ export type LanguageCode =
     | 'ja' // Japanese
     | 'kk' // Kazakh
     | 'ko' // Korean
+    | 'mi' // Māori
     | 'ms' // Malay
     | 'nl' // Dutch
     | 'no' // Norwegian
@@ -35,6 +36,7 @@ export type LanguageCode =
     | 'ro' // Romanian
     | 'ru' // Russian
     | 'sv' // Swedish
+    | 'ta' // Tamil
     | 'th' // Thai
     | 'tr' // Turkish
     | 'uk' // Ukrainian
@@ -205,6 +207,12 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         'zh-Hans': '韩语',
         'zh-Hant': '韓語',
     },
+    mi: {
+        en: 'Māori',
+        mi: 'Māori',
+        'zh-Hans': '毛利语',
+        'zh-Hant': '毛利語',
+    },
     ms: {
         en: 'Malay',
         ko: '말레이어',
@@ -265,6 +273,12 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         sv: 'Svenska',
         'zh-Hans': '瑞典语',
         'zh-Hant': '瑞典語',
+    },
+    ta: {
+        en: 'Tamil',
+        ta: 'தமிழ்',
+        'zh-Hans': '泰米尔语',
+        'zh-Hant': '泰米爾語',
     },
     th: {
         en: 'Thai',
