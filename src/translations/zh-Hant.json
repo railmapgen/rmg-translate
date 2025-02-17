@@ -12,13 +12,16 @@
     "Continue": "繼續",
     "Copy": "複製",
     "Country/Region": "國家/地區",
+    "Done": "完成",
     "Edit": "編輯",
     "Foreground colour": "前景色",
     "Go back": "返回",
     "Language": "語言/Language",
     "Justification": "理由",
+    "Multi-languages": "多語言",
     "Name": "名稱",
     "Next": "下一步",
+    "No": "否",
     "Open": "開啟",
     "Palette": "調色盤",
     "Please select...": "請選擇...",
@@ -36,5 +39,6 @@
     "Submit": "提交",
     "Translate": "翻譯",
     "Upload": "上載",
-    "White": "白"
+    "White": "白",
+    "Yes": "是"
 }
