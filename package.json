@@ -26,7 +26,7 @@
         "lint:fix": "eslint ./src ./ui --fix",
         "preview": "vite preview"
     },
-    "version": "3.3.2",
+    "version": "3.4.0",
     "main": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "exports": {
