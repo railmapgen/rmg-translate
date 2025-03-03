@@ -1,11 +1,12 @@
 {
     "Language": "言語/Language",
     "Palette": "調色板",
-    "Rail Map Generator": "鉄道路線図ジェネレータ",
-    "Rail Map Painter": "鉄道路線図画家",
-    "Rail Map Toolkit": "路線図ツールキット",
+    "Rail Map Generator": "地下鉄路線図ジェネレータ",
+    "Rail Map Painter": "地下鉄路線図画家",
+    "Rail Map Toolkit": "地下鉄路線図工具一式",
     "Remove": "削除",
     "RMG Templates": "RMG テンプレート",
     "RMP Gallery": "RMP 画廊",
-    "RMP Designer": "RMP 図案家"
+    "RMP Designer": "RMP 図案家",
+    "Rail Map Announcer": "地下鉄路線図放送機"
 }

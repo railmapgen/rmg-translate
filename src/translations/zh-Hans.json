@@ -26,9 +26,9 @@
     "Palette": "调色板",
     "Please select...": "请选择...",
     "Previous": "上一步",
-    "Rail Map Generator": "铁路线路图生成器",
+    "Rail Map Generator": "地铁线路图生成器",
     "Rail Map Painter": "地铁线路图绘制器",
-    "Rail Map Toolkit": "线路图工具包",
+    "Rail Map Toolkit": "地铁线路图工具包",
     "Remove": "删除",
     "Reset": "重置",
     "RMG Templates": "RMG 模板",
@@ -40,5 +40,6 @@
     "Translate": "翻译",
     "Upload": "上传",
     "White": "白",
-    "Yes": "是"
+    "Yes": "是",
+    "Rail Map Announcer": "地铁线路图放送机"
 }

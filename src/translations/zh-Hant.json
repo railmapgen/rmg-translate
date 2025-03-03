@@ -26,9 +26,9 @@
     "Palette": "調色盤",
     "Please select...": "請選擇...",
     "Previous": "上一步",
-    "Rail Map Generator": "鐵路路綫圖產生器",
-    "Rail Map Painter": "地鐵路綫圖繪製器",
-    "Rail Map Toolkit": "路綫圖工具組",
+    "Rail Map Generator": "地鐵線路圖產生器",
+    "Rail Map Painter": "地鐵線路圖繪製器",
+    "Rail Map Toolkit": "地鐵線路圖工具組",
     "Remove": "移除",
     "Reset": "重設",
     "RMG Templates": "RMG 範本",
@@ -40,5 +40,6 @@
     "Translate": "翻譯",
     "Upload": "上載",
     "White": "白",
-    "Yes": "是"
+    "Yes": "是",
+    "Rail Map Announcer": "地鐵線路圖放送機"
 }

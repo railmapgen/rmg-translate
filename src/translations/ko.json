@@ -23,8 +23,8 @@
     "Please select...": "선택해주세요",
     "Previous": "나아가",
     "Rail Map Generator": "철도 노선도 생성기",
-    "Rail Map Painter": "지하철 노선도 그리기",
-    "Rail Map Toolkit": "노선도 툴킷",
+    "Rail Map Painter": "철도 노선도 그리기",
+    "Rail Map Toolkit": "철도 노선도 툴킷",
     "Remove": "삭제",
     "Reset": "리셋",
     "RMG Templates": "RMG 템플릿",
@@ -35,5 +35,6 @@
     "Submit": "제출",
     "Translate": "번역",
     "Upload": "업로드",
-    "White": "화이트"
+    "White": "화이트",
+    "Rail Map Announcer": "철도 노선도 방송 기계"
 }
