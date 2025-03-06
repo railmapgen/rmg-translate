@@ -1,6 +1,7 @@
 {
     "Action": "操作",
     "Apps": "应用程序",
+    "Back": "返回",
     "Back to list": "返回列表",
     "Background colour": "背景色",
     "Black": "黑",
@@ -22,10 +23,12 @@
     "Name": "名称",
     "Next": "下一步",
     "No": "否",
+    "OK": "好",
     "Open": "打开",
     "Palette": "调色板",
     "Please select...": "请选择...",
     "Previous": "上一步",
+    "Rail Map Announcer": "地铁线路图放送机",
     "Rail Map Generator": "地铁线路图生成器",
     "Rail Map Painter": "地铁线路图绘制器",
     "Rail Map Toolkit": "地铁线路图工具包",
@@ -39,7 +42,7 @@
     "Submit": "提交",
     "Translate": "翻译",
     "Upload": "上传",
+    "Warning": "警告",
     "White": "白",
-    "Yes": "是",
-    "Rail Map Announcer": "地铁线路图放送机"
+    "Yes": "是"
 }
