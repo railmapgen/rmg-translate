@@ -14,6 +14,7 @@ export type LanguageCode =
     | 'es' // Spanish
     | 'fa' // Persian
     | 'fi' // Finnish
+    | 'fil' // Filipino
     | 'fr' // French
     | 'ga' // Irish
     | 'gd' // Scottish Gaelic
@@ -124,6 +125,12 @@ export const LANGUAGE_NAMES: LanguageNameMap<LanguageCode> = {
         fi: 'Suomi',
         'zh-Hans': '芬兰语',
         'zh-Hant': '芬蘭語',
+    },
+    fil: {
+        en: 'Filipino',
+        fil: 'Wikang Filipino',
+        'zh-Hans': '菲律宾语',
+        'zh-Hant': '菲律賓語',
     },
     fr: {
         en: 'French',
