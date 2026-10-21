@@ -1,3 +1,4 @@
+import enTranslation from './translations/en.json';
 import zhHansTranslation from './translations/zh-Hans.json';
 import zhHantTranslation from './translations/zh-Hant.json';
 import jaTranslation from './translations/ja.json';
@@ -7,7 +8,7 @@ import type { OptionalLanguageCode, SupportedLanguageCode } from './util/types';
 export const defaultTranslation: Record<SupportedLanguageCode, Record<string, never>> & {
     [l in OptionalLanguageCode]?: Record<string, never>;
 } = {
-    en: {},
+    en: enTranslation as never,
     'zh-Hans': zhHansTranslation as never,
     'zh-Hant': zhHantTranslation as never,
     ja: jaTranslation as never,

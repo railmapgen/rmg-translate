@@ -46,5 +46,9 @@
     "Upload": "上传",
     "Warning": "警告",
     "White": "白",
-    "Yes": "是"
+    "Yes": "是",
+    "RMP_CLOUD": "地铁线路图绘制器・出发进行",
+    "RMP_CLOUD_SHORT_NAME": "出发进行",
+    "RMP_EXPORT": "地铁线路图绘制器・一度停车",
+    "RMP_EXPORT_SHORT_NAME": "一度停车"
 }

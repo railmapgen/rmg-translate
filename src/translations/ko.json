@@ -46,5 +46,9 @@
     "Upload": "업로드",
     "Warning": "경고",
     "White": "화이트",
-    "Yes": "예"
+    "Yes": "예",
+    "RMP_CLOUD": "지하철 노선도 툴킷 ・ 출발 진행",
+    "RMP_CLOUD_SHORT_NAME": "출발 진행",
+    "RMP_EXPORT": "지하철 노선도 툴킷 ・ 일단 정지",
+    "RMP_EXPORT_SHORT_NAME": "일단 정지"
 }
