@@ -46,5 +46,9 @@
     "Upload": "アップロード",
     "Warning": "警告",
     "White": "白",
-    "Yes": "はい"
+    "Yes": "はい",
+    "RMP_CLOUD": "地下鉄路線図画家・出発進行",
+    "RMP_CLOUD_SHORT_NAME": "出発進行",
+    "RMP_EXPORT": "地下鉄路線図画家・一旦停止",
+    "RMP_EXPORT_SHORT_NAME": "一旦停止"
 }
