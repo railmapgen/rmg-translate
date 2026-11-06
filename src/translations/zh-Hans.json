@@ -17,7 +17,7 @@
     "Edit": "编辑",
     "Foreground colour": "前景色",
     "Go back": "返回",
-    "Language": "语言",
+    "Language": "Language/语言/語言/言語/언어",
     "Justification": "理由",
     "Multi-languages": "多语言",
     "Name": "名称",
@@ -48,7 +48,7 @@
     "White": "白",
     "Yes": "是",
     "RMP_CLOUD": "地铁线路图绘制器・出发进行",
-    "RMP_CLOUD_SHORT_NAME": "地铁线路图绘制器・出发进行",
+    "RMP_CLOUD_SHORT_NAME": "出发进行",
     "RMP_EXPORT": "地铁线路图绘制器・一度停车",
-    "RMP_EXPORT_SHORT_NAME": "地铁线路图绘制器・一度停车"
+    "RMP_EXPORT_SHORT_NAME": "一度停车"
 }

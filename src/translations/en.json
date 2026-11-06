@@ -1,7 +1,8 @@
 {
     "RMP_CLOUD": "Rail Map Painter・Proceed Signal",
-    "RMP_CLOUD_SHORT_NAME": "Rail Map Painter・Proceed Signal",
+    "RMP_CLOUD_SHORT_NAME": "Proceed Signal",
     "RMP_EXPORT": "Rail Map Painter・Stop and Proceed",
-    "RMP_EXPORT_SHORT_NAME": "Rail Map Painter・Stop and Proceed",
-    "Go back": "Back"
+    "RMP_EXPORT_SHORT_NAME": "Stop and Proceed",
+    "Go back": "Back",
+    "Language": "Language/语言/語言/言語/언어"
 }

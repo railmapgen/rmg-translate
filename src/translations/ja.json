@@ -18,7 +18,7 @@
     "Foreground colour": "前景色",
     "Go back": "戻る",
     "Justification": "理由",
-    "Language": "言語",
+    "Language": "Language/语言/語言/言語/언어",
     "Multi-languages": "多言語",
     "Name": "名称",
     "Next": "次へ",
@@ -48,7 +48,7 @@
     "White": "白",
     "Yes": "はい",
     "RMP_CLOUD": "地下鉄路線図画家・出発進行",
-    "RMP_CLOUD_SHORT_NAME": "地下鉄路線図画家・出発進行",
+    "RMP_CLOUD_SHORT_NAME": "出発進行",
     "RMP_EXPORT": "地下鉄路線図画家・一旦停止",
-    "RMP_EXPORT_SHORT_NAME": "地下鉄路線図画家・一旦停止"
+    "RMP_EXPORT_SHORT_NAME": "一旦停止"
 }
